@@ -1,0 +1,11 @@
+const arr = [1,2,3,4];
+
+const doubleArr = arr.map((num)=>2*num);
+
+console.log(arr);
+console.log(doubleArr);
+
+
+//output:
+[1, 2, 3, 4]
+[2, 4, 6, 8]

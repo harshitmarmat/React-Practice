@@ -1,0 +1,80 @@
+//find
+
+const arr = [1,2,3,4];
+
+const found = arr.find((num)=>num>2);
+
+console.log(found);
+
+//OUTPUT : 3
+
+//findIndex
+
+const arr = [1,2,3,4];
+
+const islarge = ( element ) => element >3;
+
+console.log(arr.findIndex(islarge));
+
+//OUTPUT:3
+
+//filter
+
+const array = [23,4,2,52,3,24,23,23,24];
+
+const newarr = array.filter((num)=> num>20);
+
+console.log(newarr);
+
+//OUTPUT : [23, 52, 24, 23, 23, 24]
+
+
+//Reduce
+
+const array = [23,4,2,52,3,24,23,23,24];
+
+const reducer = (prev,curr) => prev+curr;
+
+console.log(array.reduce(reducer));
+
+console.log(array.reduce(reducer,2));
+
+//OUTPUT : 
+178
+180
+
+//CONCAT ( merge two or more array)
+const array = [23,4,2,52,3,24,23,23,24];
+
+const array2  = [234,23,32,4,324,3];
+
+const array3 = array.concat(array2);
+console.log(array3);
+
+//OUTPUT : 
+​
+const array2  = [234,23,32,4,324,3];
+​
+const array3 = array.concat(array2);
+console.log(array3);
+
+//OUTPUT : [23, 4, 2, 52, 3, 24, 23, 23, 24, 234, 23, 32, 4, 324, 3]
+
+//SLICE
+
+const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+console.log(animals.slice(2));
+// expected output: Array ["camel", "duck", "elephant"]
+
+console.log(animals.slice(2, 4));
+// expected output: Array ["camel", "duck"]
+
+console.log(animals.slice(1, 5));
+// expected output: Array ["bison", "camel", "duck", "elephant"]
+
+console.log(animals.slice(-2));
+// expected output: Array ["duck", "elephant"]
+
+console.log(animals.slice(2,-1));
+// expected output: Array ["camel", "duck"]

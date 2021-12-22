@@ -1,0 +1,31 @@
+// SPREAD OPERATOR
+//... operator used in arr
+
+const arr = [1,2,3];
+const newarr = [...arr,4];
+
+console.log(newarr);
+
+//OUTPUT
+
+[1, 2, 3, 4]
+
+
+// used in Object
+
+const person = {
+  name : 'Harshit'
+};
+
+const newperson = {
+  ...person,
+  age : 67
+};
+
+console.log(newperson);
+
+//OUTPUT
+[object Object] {
+  age: 67,
+  name: "Harshit"
+}
