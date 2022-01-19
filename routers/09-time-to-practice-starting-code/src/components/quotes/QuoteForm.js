@@ -16,6 +16,10 @@ const QuoteForm = (props) => {
 
     const enteredAuthor = authorInputRef.current.value;
     const enteredText = textInputRef.current.value;
+    
+    if(enteredAuthor.length.trim===0 || enteredText.length.trim===0){
+      return;
+    }
 
     // optional: Could validate here
 
@@ -24,10 +28,16 @@ const QuoteForm = (props) => {
 
   const formFocusHandler = ()=> {
     setIsEntering(true);
+    console.log('hi');
+    return;
   }
 
   const finishEnteringHandler = () =>{
-    setIsEntering(false);
+    if(authorInputRef.current.value.length.trim===0 || textInputRef.current.value.length.trim===0){
+      return;
+    }
+
+      setIsEntering(false);
   }
 
   return (
